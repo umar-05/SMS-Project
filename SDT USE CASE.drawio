@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.3">
-  <diagram name="Page-1" id="_fkOxPhAervQ5r6UrF2d">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.3" pages="2">
+  <diagram name="USE CASE" id="_fkOxPhAervQ5r6UrF2d">
     <mxGraphModel dx="1389" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -198,6 +198,44 @@
             <mxPoint x="500" y="367" as="sourcePoint" />
             <mxPoint x="490" y="270" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="C-WsyiGghzQNYkNkG-E-" name="ERD">
+    <mxGraphModel dx="1042" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="users" vertex="1">
+          <mxGeometry height="110" width="140" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-2" parent="vCrN37Yl1sY7KjHPhFe2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="id&lt;div&gt;name&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;password&lt;/div&gt;&lt;div&gt;role&lt;/div&gt;" vertex="1">
+          <mxGeometry height="84" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="courses" vertex="1">
+          <mxGeometry height="140" width="140" x="520" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-6" parent="vCrN37Yl1sY7KjHPhFe2-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="id&lt;div&gt;course_code&lt;/div&gt;&lt;div&gt;title&lt;/div&gt;&lt;div&gt;description&lt;/div&gt;&lt;div&gt;max_students&lt;/div&gt;&lt;div&gt;lecturer_id&lt;/div&gt;&lt;div&gt;semester_id&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-7" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="semesters" vertex="1">
+          <mxGeometry height="90" width="140" x="130" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-8" parent="vCrN37Yl1sY7KjHPhFe2-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="id&lt;div&gt;name&lt;/div&gt;&lt;div&gt;is_current&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-9" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="registrations" vertex="1">
+          <mxGeometry height="100" width="140" x="130" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-10" parent="vCrN37Yl1sY7KjHPhFe2-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="id&lt;div&gt;student_id&lt;/div&gt;&lt;div&gt;course_id&lt;/div&gt;&lt;div&gt;status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="profiles" vertex="1">
+          <mxGeometry height="110" width="140" x="320" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="vCrN37Yl1sY7KjHPhFe2-12" parent="vCrN37Yl1sY7KjHPhFe2-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="id&lt;div&gt;user_id&lt;/div&gt;&lt;div&gt;phone_number&lt;/div&gt;&lt;div&gt;address&lt;/div&gt;" vertex="1">
+          <mxGeometry height="84" width="140" y="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
